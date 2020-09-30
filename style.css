@@ -9,11 +9,34 @@
 
 body {
   margin-top: 10vh;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  background: linear-gradient(-45deg, #000000, #6e5c41, #b37a25, #f79707);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
   font-family: 'Raleway', sans-serif;
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* .background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+} */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 h1,
@@ -137,7 +160,7 @@ span {
   bottom: 38px;
   width: 150px;
   height: 52px;
-  background-color: #cfa250;
+  background-color: #eeab30;
   transition: all 0.3s;
 }
 
@@ -166,7 +189,7 @@ span {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-color: #cfa250;
+  background-color: #eeab30;
   transition: all 0.2s linear;
 }
 
@@ -181,7 +204,7 @@ span {
 }
 
 .b_round_back_hover {
-  background-color: #cfa250;
+  background-color: #eeab30;
 }
 
 .s_round_click {
