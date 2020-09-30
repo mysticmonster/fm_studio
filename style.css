@@ -54,6 +54,11 @@ a {
   padding: 0px 40px;
 }
 
+a:hover {
+	color: #eeab30;
+	text-decoration: none;
+}
+
 h1 {
   font-size: 2.5em;
 }
